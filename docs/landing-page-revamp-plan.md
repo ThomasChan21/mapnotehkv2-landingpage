@@ -218,8 +218,9 @@ Optional: 主要做：工商舖 / 大手 / 全幢 / 混合
 | 3 | Policy Cheatsheet section + disclaimer | In progress |
 | 4 | Pain + scenarios rewrite | In progress |
 | 5 | Signup roles + policy interests | In progress |
-| 6 | Alt text / CIR framing; asset swap when ready | Partial (copy first) |
-| 7 | Update this plan doc to v2 | Done |
+| 6 | Alt text / CIR framing; asset swap when ready | Done (copy/alt); screenshot swap follow-up |  
+| 7 | Update this plan doc to v2 | Done |  
+| 8 | Implement Phase 1 on `features/cir-policy-landing-revamp` | Done |
 
 ### Phase 2 — Product wedge（mobile / server）
 
