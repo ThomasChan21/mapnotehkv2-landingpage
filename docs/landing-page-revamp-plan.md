@@ -209,26 +209,29 @@ Optional: 主要做：工商舖 / 大手 / 全幢 / 混合
 
 ## 9. Phased implementation
 
-### Phase 1 — Landing only（this branch）
+### Phase 1 — Landing only ✅ merged to `develop`
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Meta, title, footer, CTAs | In progress |
-| 2 | Hero rewrite (S16-first) | In progress |
-| 3 | Policy Cheatsheet section + disclaimer | In progress |
-| 4 | Pain + scenarios rewrite | In progress |
-| 5 | Signup roles + policy interests | In progress |
-| 6 | Alt text / CIR framing; asset swap when ready | Done (copy/alt); screenshot swap follow-up |  
-| 7 | Update this plan doc to v2 | Done |  
-| 8 | Implement Phase 1 on `features/cir-policy-landing-revamp` | Done |
+| 1 | Meta, title, footer, CTAs | Done |
+| 2 | Hero rewrite (S16-first) | Done |
+| 3 | Policy Cheatsheet section + disclaimer | Done |
+| 4 | Pain + scenarios rewrite | Done |
+| 5 | Signup roles + policy interests | Done |
+| 6 | Alt text / CIR framing; asset swap when ready | Copy done; screenshot swap follow-up |
+| 7 | Update this plan doc to v2 | Done |
 
-### Phase 2 — Product wedge（mobile / server）
+### Phase 2 — Product wedge（in progress · branch `features/nearby-s16-note-context`）
 
-- **P0:** Nearby S16 relative to target + portal links  
-- **P0:** Policy Tags／Tooltips in App（OZP zone、Pre-1987 flag、強拍門檻資訊等）— 參考非合資格結論  
-- **P1:** PDF export with nearby S16 list + policy context box  
-- **P2:** Lot boundary + GFA estimate（legal disclaimer）  
-- **P3:** White-label PDF；S12A deep-dive for 重建／大手 niche  
+| Slice | Task | Repo | Status |
+|-------|------|------|--------|
+| **A** | Nearby API: `section`/`topic` on `near_lat`/`near_lng` + `distanceMetres` | `vctsserver` | Done |
+| **A** | Note detail: **周邊 S16** panel (1 km, S16 filter) + SPP3 sheet | `vctsmobile` | Done |
+| **A** | Note map view: nearby S16 pins on `HKVectorMap` | `vctsmobile` | Done |
+| **B (lite)** | Note detail: static **政策速覽** panel (reference + disclaimer) | `vctsmobile` | Done |
+| **B** | App policy Tags from OZP / building data (not hard Eligible) | `vctsmobile` + server | Planned |
+| **P1** | PDF module: nearby S16 list + policy context box | `vctsmobile` | Planned |
+| **P2** | Lot boundary + GFA estimate | both | Planned |
 
 ### Phase 3 — Monetization
 
